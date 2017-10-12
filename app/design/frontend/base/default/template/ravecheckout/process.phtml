@@ -1,0 +1,27 @@
+<?php 
+/**
+ * RavePay (Powered by Flutterwave).
+ * author:    Falodun O. Solomon, falodunosolomon@gmail.com
+ * @category    Rave
+ */
+?>
+<style>
+    .process-loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #F16439;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+<div>
+    <h1>Transaction in progress ...</h1>
+    <small style="display: inline-block">Kindly wait a moment, we're working on it!</small>
+    <div class="process-loader"></div>
+</div>
