@@ -9,8 +9,8 @@ class Rave_Ravecheckout_Model_PaymentMethod extends Rave_Ravecheckout_Model_Paym
     }
 
     public function getBaseUrl() {
-        $goLive = Mage::getStoreConfig('payment/ravecheckout/go_live');
-        return (bool) $goLive ? 'https://api.ravepay.co/' : 'http://flw-pms-dev.eu-west-1.elasticbeanstalk.com/';
+        $goLive = Mage::getStoreConfig('payment/ravecheckout/go_live'); 
+        return (bool) $goLive ? 'https://api.ravepay.co/' : 'https://rave-api-v2.herokuapp.com/';
     }
 
     public function getPaymentMethodStoredConfig() {

@@ -19,9 +19,20 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <go_live translate="label">
-                            <label>Go Live ?</label>
+                        <test_mode translate="label">
+                            <label>Enable Test Mode ?</label>
                             <frontend_type>select</frontend_type>
+                            <comment><![CDATA[NOTE: DO NOT ENABLE BOTH LIVE AND TEST MODE AT THE SAME TIME !]]></comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </test_mode>
+                        <go_live translate="label">
+                            <label>Enable Go Live ?</label>
+                            <frontend_type>select</frontend_type>
+                            <comment><![CDATA[NOTE: DO NOT ENABLE BOTH LIVE AND TEST MODE AT THE SAME TIME !]]></comment>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>5</sort_order>
                             <show_in_default>1</show_in_default>
